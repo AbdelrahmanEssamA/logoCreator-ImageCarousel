@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  overflow-x: hidden;
+  background-color: black;
+}
+.nav-bar {
+  width: 100%;
+  margin: 0;
+  color: white;
+  background-color: #333;
+  padding: 7px;
+  -webkit-box-shadow: -3px 14px 12px -13px rgba(0, 0, 0, 0.58);
+  -moz-box-shadow: -3px 14px 12px -13px rgba(0, 0, 0, 0.58);
+  box-shadow: -3px 14px 12px -13px rgba(0, 0, 0, 0.58);
+}
+
+.nav-bar li {
+  color: white;
+  display: inline-block;
+  margin: 10px 30px;
+  font-size: 22px;
+  cursor: pointer;
+  font-weight: 300;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3;
+}
+.nav-bar Li:hover {
+  border-bottom: 2px solid black;
+}
+.profile-icon {
+  float: right;
+  margin-top: 0;
+  padding-top: 0;
+  margin-right: 5px;
+}
+.logo {
+  margin: auto;
+  text-align: center;
+
+  height: auto;
+}
+
+.imageHolder {
+  width: 50%;
+  height: 50%;
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.upload-container {
+  clear: both;
+  margin-left: 30px;
+}
+.mobileFrame {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.innerTitle {
+  top: 30%;
+  left: 23.5%;
+  position: absolute;
+  z-index: 40;
+}
+.innerImage {
+  left: 25%;
+  top: 40%;
+
+  width: 50%;
+  position: absolute;
+}
