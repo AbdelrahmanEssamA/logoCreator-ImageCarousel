@@ -194,14 +194,14 @@ function LogoEditor() {
             onChange={changeTitle}
           />
           <Divider />
-          <Typography variant="subtitle1">Background Color</Typography>
+          <Typography variant="subtitle1">Title Color</Typography>
           <TwitterPicker
             className={classes.TwitterPicker}
             color={titleColor}
             onChangeComplete={changeTitleColor}
           />
           <Divider />
-          <Typography variant="subtitle1">Title Color</Typography>
+          <Typography variant="subtitle1">Background Color</Typography>
           <TwitterPicker
             className={classes.TwitterPicker}
             color={bgColor}
