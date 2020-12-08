@@ -19,7 +19,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
 import PhotoCamera from "@material-ui/icons/PhotoCamera";
 import { TwitterPicker } from "react-color";
-
+import frame from "../photos/frame.png";
 function LogoEditor() {
   const useStyles = makeStyles((theme) => ({
     PhotoCamera: {
@@ -83,6 +83,7 @@ function LogoEditor() {
       marginTop: theme.spacing(1),
     },
   }));
+
   const [image, setImage] = React.useState(
     "https://www.dhoumm.co/cdn-k1/ga/ideas-for-cheap-and-simple-garden-decorations_room-interior-and-decoration.jpg"
   );
@@ -121,7 +122,7 @@ function LogoEditor() {
     } else if (e.target.value === "Normal") {
       setRadius("5px");
       setHight("auto");
-      setWidth("75%");
+      setWidth("50%");
     } else if (e.target.value === "Square") {
       setRadius("0");
       setHight("220px");
@@ -231,15 +232,11 @@ function LogoEditor() {
           >
             Open Preview
           </Button>
-          <Dialog open={open} onClose={handleClose} maxWidth="sm">
+          <Dialog open={open} onClose={handleClose} maxWidth="xs">
             <DialogTitle id="form-dialog-title">Preview</DialogTitle>
             <DialogContent>
               <div style={{ backgroundColor: bgColor }}>
-                <img
-                  className="mobileFrame"
-                  src="https://i.dlpng.com/static/png/6823046_preview.png"
-                  alt="phone"
-                />
+                <img className="mobileFrame" src={frame} alt="phone" />
                 <h2
                   className="innerTitle"
                   variant="subtitle1"

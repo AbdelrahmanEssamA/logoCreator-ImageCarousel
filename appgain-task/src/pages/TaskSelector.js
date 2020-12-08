@@ -45,8 +45,10 @@ function TaskSelector() {
             Logo Editor
           </Link>
         </Button>
-        <Button variant="outlined" color="secondary" className={classes.Button}>
-          Image Carousel
+        <Button variant="contained" color="primary" className={classes.Button}>
+          <Link to="/ImageCarousel" className={classes.Link}>
+            Image Carousel
+          </Link>
         </Button>
       </Grid>
     </div>

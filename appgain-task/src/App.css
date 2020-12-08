@@ -6,6 +6,7 @@ body {
   overflow-x: hidden;
   background-color: black;
 }
+/*-------NavBar-------*/
 .nav-bar {
   width: 100%;
   margin: 0;
@@ -30,19 +31,14 @@ body {
 .nav-bar Li:hover {
   border-bottom: 2px solid black;
 }
-.profile-icon {
-  float: right;
-  margin-top: 0;
-  padding-top: 0;
-  margin-right: 5px;
-}
+/*-------Task Selector-------*/
 .logo {
   margin: auto;
   text-align: center;
-
   height: auto;
 }
 
+/* -------Logo editor*-------*/
 .imageHolder {
   width: 50%;
   height: 50%;
@@ -58,20 +54,51 @@ body {
   margin-left: 30px;
 }
 .mobileFrame {
-  width: 100%;
+  margin-left: 6%;
+  width: 90%;
   height: auto;
   position: relative;
 }
 .innerTitle {
   top: 30%;
-  left: 23.5%;
+  left: 23%;
   position: absolute;
   z-index: 40;
 }
 .innerImage {
-  left: 25%;
+  left: 24%;
   top: 40%;
 
   width: 50%;
   position: absolute;
+}
+/*-------ImageCarousel-------*/
+.app {
+  min-height: 100vh;
+  max-height: auto;
+  background-color: #1e1e1e;
+  color: white;
+  text-align: center;
+  padding: 3%;
+  paddingTop:5%;
+}
+
+.inputHide {
+  display: none;
+}
+.result {
+  min-height: 100%;
+  max-height: auto;
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: left;
+}
+.imageSlide {
+  margin: 0.5%;
+  width: 70%;
+  max-height: 60vh;
+  border-radius: 5px;
 }
