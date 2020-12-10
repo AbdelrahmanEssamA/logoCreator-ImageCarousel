@@ -235,22 +235,28 @@ function LogoEditor() {
           <Dialog open={open} onClose={handleClose} maxWidth="xs">
             <DialogTitle id="form-dialog-title">Preview</DialogTitle>
             <DialogContent>
-              <div style={{ backgroundColor: bgColor }}>
+              <div>
                 <img className="mobileFrame" src={frame} alt="phone" />
-                <h2
-                  className="innerTitle"
-                  variant="subtitle1"
-                  style={{ color: titleColor }}
-                >
-                  {title}
-                </h2>
-                <img
-                  src={image}
-                  className="innerImage"
-                  id="profileImg"
-                  style={{ borderRadius: radius, width: width, height: height }}
-                  alt="logo"
-                />
+                <div className="innerLogo" style={{ backgroundColor: bgColor }}>
+                  <h2
+                    className="innerTitle"
+                    variant="subtitle1"
+                    style={{ color: titleColor }}
+                  >
+                    {title}
+                  </h2>
+                  <img
+                    src={image}
+                    className="innerImage"
+                    id="profileImg"
+                    style={{
+                      borderRadius: radius,
+                      width: width,
+                      height: height,
+                    }}
+                    alt="logo"
+                  />
+                </div>
               </div>
             </DialogContent>
             <DialogActions>

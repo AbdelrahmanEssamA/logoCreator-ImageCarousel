@@ -56,20 +56,22 @@ body {
 .mobileFrame {
   margin-left: 6%;
   width: 90%;
-  height: auto;
+
   position: relative;
 }
 .innerTitle {
-  top: 30%;
-  left: 23%;
-  position: absolute;
   z-index: 40;
 }
 .innerImage {
-  left: 24%;
-  top: 40%;
-
-  width: 50%;
+  margin: auto;
+  width: 90%;
+}
+.innerLogo {
+  left: 14%;
+  top: 30%;
+  text-align: center;
+  width: 72%;
+  padding: 1%;
   position: absolute;
 }
 /*-------ImageCarousel-------*/
@@ -80,7 +82,7 @@ body {
   color: white;
   text-align: center;
   padding: 3%;
-  paddingTop:5%;
+  paddingtop: 5%;
 }
 
 .inputHide {
